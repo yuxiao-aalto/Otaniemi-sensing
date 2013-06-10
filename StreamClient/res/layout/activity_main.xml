@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+   
+	<Button android:id = "@+id/button_startStreaming"
+			android:layout_width = "fill_parent"
+			android:layout_height = "wrap_content"
+			android:text = "@string/Start"
+			android:onClick="startStreaming"/>    	
+			
+	<Button android:id = "@+id/button_stopStreaming"
+		    android:layout_width = "fill_parent"
+			android:layout_height = "wrap_content"
+			android:text = "@string/Stop"
+			android:onClick="stopStreaming"/>
+	<TextView android:id = "@+id/debugInfo"
+		    	android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+	        	android:maxLines = "2"
+	        	android:scrollbars = "vertical"/>
+	
+	<FrameLayout
+    android:id="@+id/camera_preview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    />
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string-array name = "protocol_list">
+        <item>UDP</item>
+        <item>TCP</item>
+        <item>RTPUDP</item>
+        <item>RTPTCP</item>
+    </string-array>
+    
+    <string-array name = "video_encoder_list">
+        <item>H263</item>
+        <item>H264</item>
+        <item>MPEG_4_SP</item>
+        <item>DEFAULT</item>
+    </string-array>
+    
+     <string-array name = "video_output_format_list">
+        <item>MPEG_4</item>
+        <item>AMR_NB</item>
+        <item>AMR_WB</item>
+        <item>RAW_AMR</item>
+        <item>THREE_GPP</item>
+        <item>DEFAULT</item>
+    </string-array>
+</resources>

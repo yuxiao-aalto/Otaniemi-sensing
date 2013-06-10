@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+		<ListPreference
+                android:key="list_protocol"
+                android:title="Protocol"
+                android:entries="@array/protocol_list"
+                android:entryValues="@array/protocol_list" android:selectable="true"/>
+        
+        <CheckBoxPreference
+                android:key="proxy_enabled"
+                android:title="Enable Proxy"/>
+    
+        <CheckBoxPreference
+                android:key="enable_ctl_channel"
+                android:title="Enable Control Message Channel (TCP)"/>
+        
+        <EditTextPreference 
+            android:key="server_IP"
+            android:title="Proxy hostname or IP"/>
+        
+        <EditTextPreference
+            android:key="server_port"
+            android:title="Proxy TCP port (CtlChannel)"/>
+            
+        <ListPreference
+                android:key="list_video_encoder"
+                android:title="Video Encoder"
+                android:entries="@array/video_encoder_list"
+                android:entryValues="@array/video_encoder_list" android:selectable="true"/>
+            
+        <ListPreference
+                android:key="list_video_output_format"
+                android:title="Video Output Format"
+                android:entries="@array/video_output_format_list"
+                android:entryValues="@array/video_output_format_list" android:selectable="true"/>
+</PreferenceScreen>
